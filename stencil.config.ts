@@ -1,14 +1,16 @@
 import { Config } from '@stencil/core';
 import { postcss } from '@stencil/postcss';
+import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
 const postcssPresetEnv = require('postcss-preset-env');
 export const config: Config = {
   namespace: 'pepper',
-  // globalStyle: 'src/styles/global.scss',
-    plugins: [
-    , postcss({
-      plugins: [autoprefixer(), postcssPresetEnv(/* pluginOptions */)]
-    })
+  globalStyle: 'src/global/global.css',
+  plugins: [
+    ,
+    postcss({
+      plugins: [tailwindcss(), autoprefixer(), postcssPresetEnv()],
+    }),
   ],
   outputTargets: [
     {

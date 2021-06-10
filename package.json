@@ -32,6 +32,7 @@
     "@stencil/sass": "^1.4.1",
     "@stencil/store": "^1.4.1",
     "@types/autoprefixer": "^10.2.0",
-    "autoprefixer": "^10.2.5"
+    "autoprefixer": "^10.2.6",
+    "tailwindcss": "^2.1.4"
   }
 }
